@@ -1,0 +1,31 @@
+<html>
+<head>
+    <script  type="text/javascript" src="jquery.min.js"></script>
+    <link  id="mylink" type="text/css" id="pagestyle" rel="stylesheet" href="blue.css" />
+</head>
+
+<body>
+<div style="float:right;margin-top:20px;background-color:white;">
+    <label>主题选择：</label><br>
+    <select onchange="chg(this.value);" style="width:200px;">
+        <option value="yellow">黄色</option>
+        <option value="blue" selected>蓝色</option>
+        <option value="red">红色</option>
+    </select>
+    <div></div>
+</div>
+
+
+</body>
+<script tyep="text/javascript">
+    function chgStyle(v){
+        var my=document.getElementById("mylink");
+        my.href=v ".css";
+    }
+</script>
+<script>
+    function chg(p){
+        $('link').attr('href',p '.css');
+    }
+</script>
+</html>
